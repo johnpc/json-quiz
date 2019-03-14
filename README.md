@@ -12,7 +12,9 @@ npm start
 open http://localhost:3000
 ```
 
-The example requires node 4.0 or higher.
+The example requires node 4.0 or higher. 
+
+There is also a working example at [https://jpc.io/json-quiz](https://jpc.io/json-quiz)
 
 ### How does it work?
 
