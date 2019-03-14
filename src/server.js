@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
 import QuizApp from './components/quizApp';
-import QuestionStore from './stores/questionStore';
+import QuestionStore from './stores/QuestionStore';
 import React from 'react';
 import { renderToString } from 'react-dom/server'
 
