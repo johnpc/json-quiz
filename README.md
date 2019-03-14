@@ -56,7 +56,6 @@ Here is a simple example. Please take some time to examine the structure and mak
     'questions': [
         {
             'text': 'What do you think?',
-            'selected_answer': null,
             'answers': [
                 {
                     'text': 'Maybe',
@@ -78,7 +77,6 @@ Here is a simple example. Please take some time to examine the structure and mak
         },
         {
             'text': 'Yes or no?',
-            'selected_answer': null,
             'answers': [
                 {
                     'text': 'No',
@@ -102,12 +100,12 @@ Here is a simple example. Please take some time to examine the structure and mak
     'answers': [
         {
             'id': 'yes',
-            'title': 'Answer yes',
-            'description': 'The yes description.'
+            'title': 'Answer: yes',
+            'description': 'The "yes" description.'
         },
         {
             'id': 'no',
-            'title': 'Answer no',
+            'title': 'Answer: no',
             'description': 'The "no" description contains <b>html</b>'
         }
     ]
