@@ -108,7 +108,7 @@ let example_quiz = {
                     'score': {
                         'buffer_overflow': 0,
                         'mitm': 0,
-                        'phishing': -400,
+                        'phishing': -5000,
                         'ddos': 0,
                         'sql_injection': 0,
                     }
