@@ -20,11 +20,11 @@ There is also a working example at [https://jpc.io/json-quiz](https://jpc.io/jso
 
 The entire quiz is driven by a hard-coded example json found in `src/fetchQuizJson.js` - which is the only file that needs to be edited to create a custom quiz.
 
-Each question has a `questions.answers.score` object that controls how many "points" toward a given answer is awarded for choosing that answer. When all the question have a selected answer, it calculates which answer has the most points and displays that as your result.  
+Each question has a `questions.answers.score` object that controls how many "points" toward a given answer is awarded for choosing that answer. When all the questions have a selected answer, it calculates which answer has the most points and displays that as your result.  
 
 ## Changing the example
 
-Likely, you are interested in customizing the quiz to your liking. Luckily, the entire applications structure is configurable with a single json object.
+Likely, you are interested in customizing the quiz to your liking. Luckily, the entire application's structure is configurable with a single json object.
 
 The only code you have to implement yourself is `src/fetchQuizJson.js` - you'll update the existing `FetchQuizJson.fetch` method to resolve a promise of your own quiz! By using promises instead of returning the json directly, it should be flexible whether you want to hard code a quiz (as in the example) or fetch a json document from the web. 
 
@@ -113,3 +113,9 @@ Here is a simple example. Please take some time to examine the structure and mak
     ]
 }
 ``` 
+
+## Security
+
+WARNING: I've decided to make it possible to inject html into your `answers.description`. I think it makes it more fun to allow people to include images, formatting, and clickable links. 
+
+But this is also dangerous (try adding some spicy salsa to the taco in the [example](https://jpc.io/json-quiz) to see what I mean). Be aware of this and make sure you trust the quiz json that you're consuming! 
