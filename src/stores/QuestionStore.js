@@ -7,7 +7,6 @@ export default class QuestionStore {
 	@observable questions = [];
 
 	@computed get winningAnswer() {
-
 		// Creates an object with answer_ids as keys
 		// and sums of scores for each answer as values
 		let scores = {};
